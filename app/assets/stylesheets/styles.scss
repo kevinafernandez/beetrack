@@ -1,0 +1,49 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Poppins-Regular !important;
+  background-color: #f3f2f2;
+}
+
+nav {
+  background: linear-gradient(120deg, #5c73ec 23%, #2f87ee 90%);
+  box-shadow: 0 0 0.8125rem 0 #565555;
+
+  & img {
+    height: 40px;
+    width: 40px;
+  }
+
+  & .title {
+    font-size: 18px;
+    font-style: italic;
+    color: black;
+    font-weight: bolder;
+    margin-left: .30rem;
+  }
+}
+
+.vehicle {
+  margin-top: 3.5rem;
+  margin-bottom: 6rem;
+
+  & .card {
+    background: white;
+    width: 40rem;
+  }
+
+}
+
+footer {
+  background: #e8e6e6;
+  bottom: 0;
+  border-top: 1px solid #d8d8d8;
+  height: 40px;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
