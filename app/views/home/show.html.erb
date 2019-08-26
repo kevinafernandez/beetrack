@@ -1,0 +1,30 @@
+<div class="vehicle d-flex justify-content-center">
+  <div class="row">
+    <div class="col-sm-12 col-md-5 mb-4">
+      <div class="card rounded">
+        <div class="card-header">
+          VEHICLES - MOST RECENT COORDENATES
+        </div>
+        <div class="card-body">
+          <% if @waypoints.present? %>
+            <% @waypoints.each do |waypoint| %>
+              <p class="title-identifier"> <%= waypoint.vehicle.identifier %> </p>
+              <ul>
+                <li>Lat: <%= waypoint.latitude %></li>
+                <li>Lng: <%= waypoint.longitude %></li>
+                <li>Sent at: <%= waypoint.sent_at %></li>
+              </ul>
+              <hr>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-7">
+      <!--<div id="map" data-waypoints="<%# @waypoints.to_json(methods: [:get_data]) %>"></div>-->
+      <div id="map" data-waypoints="<%= @waypoints.to_json %>"></div>
+    </div>
+  </div>
+</div>
+
+<%= render "google_maps" %> <%# JS logic for display map %>

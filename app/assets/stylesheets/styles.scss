@@ -30,9 +30,34 @@ nav {
   margin-top: 3.5rem;
   margin-bottom: 6rem;
 
+  & .row {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+
   & .card {
     background: white;
-    width: 40rem;
+    border: 1px solid #d1d1d2;
+
+    & .card-header {
+      background: #eaeaea;
+      color: black;
+      font-size: 20px;
+      padding-left: 1rem;
+    }
+
+    & .title-identifier {
+      color: #006eb3;
+      font-size: 22px;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  & #map {
+    border-radius: 0.25rem;
+    border: 1px solid #e2e2e4;
+    height: 375px;
   }
 
 }
