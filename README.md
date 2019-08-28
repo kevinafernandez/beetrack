@@ -15,11 +15,11 @@ This project is a simple rails app who accepts GPS waypoints via API and display
 For this project you must to consider or install this versions:
   * Ruby: 2.5.3
   * Rails: 5.2.3
-  * Database: PostgreSQL 9.5
 	* Sidekiq: 5.2.3
+  * Database: PostgreSQL 9.5
 
 ## Setup
-* Clone this repo via HTTPS: `https://github.com/kevinafernandezbeetrack.git`
+* Clone this repo via HTTPS: `git clone https://github.com/kevinafernandezbeetrack.git`
 
 * Install all the gems && dependencies: `bundle install`
 
