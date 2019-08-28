@@ -1,4 +1,4 @@
-# Beetrack Evaluation
+# ![alt text](https://pbs.twimg.com/profile_images/1020312999960162304/04GGH-1C_400x400.jpg) Beetrack Evaluation
 
 RoR 5.2.3 application
 
