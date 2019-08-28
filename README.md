@@ -15,8 +15,7 @@ This project is a simple rails app who accepts GPS waypoints via API and display
 For this project you must to consider or install this versions:
   * Ruby: 2.5.3
   * Rails: 5.2.3
-	* Sidekiq: 5.2.3
-  * Database: PostgreSQL 9.5
+  * Relational Database: PostgreSQL 9.5
 
 ## Setup
 * Clone this repo via HTTPS: `git clone https://github.com/kevinafernandezbeetrack.git`
@@ -40,5 +39,7 @@ For this project you must to consider or install this versions:
 * `app/views` - Contains a template for display the vehicles and map
 
 * `app/public/lib/javascript` - Contain a template for create the logic with Google maps
+
+* `rspec` - Contains a folder where we define all the tests for the app (models, controllers, routing, workers)
 
 * `db` - Contains the migrations needed to create our database schema.
