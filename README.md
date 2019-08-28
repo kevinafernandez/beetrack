@@ -1,4 +1,4 @@
-# ![Alt text](https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/2244/vertical-sinslogan.png "Beetrack Evaluation")
+# ![Alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKsPvGG_V8a1CfYgQgyzHjdNNvu0Y8TUFkTea7JwU3AM_SXTa "Beetrack Evaluation")
 
 Ruby on Rails 5.2.3 application
 
