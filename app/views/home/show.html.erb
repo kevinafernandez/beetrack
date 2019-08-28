@@ -1,4 +1,4 @@
-<div class="vehicle d-flex justify-content-center">
+<div class="home d-flex justify-content-center">
   <div class="row">
     <div class="col-sm-12 col-md-5 mb-4">
       <div class="card rounded">
@@ -6,25 +6,25 @@
           VEHICLES - MOST RECENT COORDENATES
         </div>
         <div class="card-body">
-          <% if @waypoints.present? %>
-            <% @waypoints.each do |waypoint| %>
-              <p class="title-identifier"> <%= waypoint.vehicle.identifier %> </p>
-              <ul>
-                <li>Lat: <%= waypoint.latitude %></li>
-                <li>Lng: <%= waypoint.longitude %></li>
-                <li>Sent at: <%= waypoint.sent_at %></li>
-              </ul>
-              <hr>
-            <% end %>
+          <% @waypoints.each do |waypoint| %>
+            <p class="title-identifier"> <%= waypoint.vehicle.identifier %> </p>
+            <ul>
+              <li>Lat: <%= waypoint.latitude %></li>
+              <li>Lng: <%= waypoint.longitude %></li>
+              <li>Sent at: <%= waypoint.sent_at %></li>
+            </ul>
+            <hr>
           <% end %>
         </div>
       </div>
     </div>
     <div class="col-sm-12 col-md-7">
-      <!--<div id="map" data-waypoints="<%# @waypoints.to_json(methods: [:get_data]) %>"></div>-->
-      <div id="map" data-waypoints="<%= @waypoints.to_json %>"></div>
+      <div id="map" data-waypoints="<%= @waypoints.to_json(methods: :vehicle_identifier) %>"></div> <!-- display map -->
     </div>
   </div>
 </div>
 
-<%= render "google_maps" %> <%# JS logic for display map %>
+<script type="text/javascript" src="/javascript/lib/google_maps.js"></script> <!-- JS logic for map -->
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvSZsufXR9KYlPdlhivpuhfTtjnh-E3FM&callback=initMap">
+  </script> <!-- API key -->
