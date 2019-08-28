@@ -1,11 +1,11 @@
-# Beetrack Evaluation
+# ![alt text](https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/2244/vertical-sinslogan.png) Beetrack Evaluation
 
 RoR 5.2.3 application
 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [Setup](#setup) 
 * [Folders](#folders)
 
 ## General info
