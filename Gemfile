@@ -20,15 +20,12 @@ gem 'sidekiq', '~> 5.2', '>= 5.2.7'
 gem 'redis'
 # Bootstrap
 gem 'bootstrap', '~> 4.3.1'
-# Pagination
-gem 'kaminari'
 
 group :development, :test do
   gem 'shoulda-matchers'
 end
 
 group :development do
-  gem 'pry-rails'
   gem 'rspec-rails'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

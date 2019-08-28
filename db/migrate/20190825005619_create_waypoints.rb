@@ -1,4 +1,4 @@
-class CreateWaypoints < ActiveRecord::Migration[5.0]
+class CreateWaypoints < ActiveRecord::Migration[5.2]
   def change
     create_table :waypoints do |t|
       t.decimal :latitude, precision: 10, scale: 6
