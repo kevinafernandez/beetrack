@@ -4,11 +4,11 @@ body {
 }
 
 body {
+  background-color: #eaeaea;
   font-family: Poppins-Regular !important;
-  background-color: #f3f2f2;
 }
 
-nav {
+.navbar {
   background: linear-gradient(120deg, #5c73ec 23%, #2f87ee 90%);
   box-shadow: 0 0 0.8125rem 0 #565555;
 
@@ -18,15 +18,16 @@ nav {
   }
 
   & .title {
+    color: black;
     font-size: 18px;
     font-style: italic;
-    color: black;
     font-weight: bolder;
     margin-left: .30rem;
   }
+
 }
 
-.vehicle {
+.home {
   margin-top: 3.5rem;
   margin-bottom: 6rem;
 
@@ -37,14 +38,23 @@ nav {
   }
 
   & .card {
-    background: white;
-    border: 1px solid #d1d1d2;
+    background-color: white;
+    border: 1px solid #c1c1c1;
+
+    & .card-body {
+      padding-bottom: 0px;
+    }
 
     & .card-header {
-      background: #eaeaea;
+      background-color: #dcdbdb;
       color: black;
       font-size: 20px;
       padding-left: 1rem;
+    }
+
+    & .card-footer {
+      border-top: none;
+      padding-top: 0px;
     }
 
     & .title-identifier {
@@ -52,11 +62,12 @@ nav {
       font-size: 22px;
       margin-bottom: 0.5rem;
     }
+
   }
 
   & #map {
+    border: 1px solid #d5d6d8;
     border-radius: 0.25rem;
-    border: 1px solid #e2e2e4;
     height: 375px;
   }
 
@@ -65,10 +76,10 @@ nav {
 footer {
   background: #e8e6e6;
   bottom: 0;
-  border-top: 1px solid #d8d8d8;
+  border-top: 1px solid #d6d4d4;
   height: 40px;
+  left: 0;
   padding: 0;
   position: fixed;
-  left: 0;
   width: 100%;
 }

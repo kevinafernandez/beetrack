@@ -10,8 +10,8 @@ class Waypoint < ApplicationRecord
     self.vehicle = vehicle
   end
 
-  def data_waypoints
-    [sent_at, latitude, longitude, vehicle.identifier].compact.join(',')
+  def vehicle_identifier
+    vehicle.identifier
   end
 
 end

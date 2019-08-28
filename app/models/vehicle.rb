@@ -1,5 +1,5 @@
 class Vehicle < ApplicationRecord
   has_many :waypoints
 
-  validates :identifier, uniqueness: { case_sensitive: false }
+  validates :identifier, presence: true, uniqueness: { case_sensitive: false }
 end
