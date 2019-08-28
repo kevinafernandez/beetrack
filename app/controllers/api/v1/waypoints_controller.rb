@@ -1,14 +1,24 @@
-class Api::V1::WaypointsController < ApplicationController
+module Api
+  module V1
+    class WaypointsController < ApplicationController
+      def create
+        WaypointWorker.perform_async(waypoint_params.to_json, vehicle_params)
+      end
 
-  def create
-    vehicle_identifier = params['vehicle_identifier'].upcase
-    WaypointWorker.perform_async(waypoint_params.to_json, vehicle_identifier)
-  end
+      private
 
-  private
+      # strong_params && required formats
+      def waypoint_params
+        params.require(:waypoint).tap do |waypoint_params|
+          waypoint_params.require(:latitude)
+          waypoint_params.require(:longitude)
+          waypoint_params.require(:sent_at)
+        end
+      end
 
-  # strong_params
-  def waypoint_params
-    params.require(:waypoint).permit(:latitude, :longitude, :sent_at)
+      def vehicle_params
+        params.require(:vehicle_identifier)
+      end
+    end
   end
 end
