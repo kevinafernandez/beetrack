@@ -13,10 +13,10 @@ This project is a simple rails app who accepts GPS waypoints via API and display
 	
 ## Technologies
 For this project you must to consider or install this versions:
-  * Ruby: 2.5.3
-  * Rails: 5.2.3
-  * Relational Database: PostgreSQL 9.5
-  * Redis: 4.0.9 | You can install with this link: `https://redis.io/download`
+  * Ruby: `2.5.3`
+  * Rails: `5.2.3`
+  * PostgreSQL:  `9.5`
+  * Redis: `4.0.9` | You can install with this link: `https://redis.io/download`
 
 ## Setup
 * Clone this repo via HTTPS: `git clone https://github.com/kevinafernandezbeetrack.git`
